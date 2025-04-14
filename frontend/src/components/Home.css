@@ -1,0 +1,103 @@
+/* General styling */
+.homepage {
+  width: 90%; /* Increase the width for more space */
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Product Section */
+.product-section {
+  margin-top: 2rem;
+  position: relative;
+  padding-bottom: 50px; /* Extra padding for button space */
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around; /* Adjusted for better spacing */
+  flex-wrap: wrap;
+}
+
+.product-item {
+  text-align: center;
+  margin: 1rem;
+  flex: 1 1 30%; /* Allow items to grow and shrink */
+  max-width: 30%; /* Limit to three items per row */
+  cursor: pointer; /* Pointer for clickable items */
+  border: 1px solid #ddd; /* Optional border for better visibility */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Padding for the item */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+  position: relative; /* For button positioning */
+}
+
+.product-item:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.product-img {
+  width: 120px; /* Adjusted for better fit */
+  height: 120px; /* Adjusted for better fit */
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s; /* Image scaling effect */
+}
+
+.product-item:hover .product-img {
+  transform: scale(1.1); /* Enlarge image on item hover */
+}
+
+.product-name {
+  font-size: 1.2rem; /* Adjust font size */
+  margin-top: 0.5rem; /* Space above the product name */
+}
+
+/* Explore More Link */
+.explore-more {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: blue; /* Blue color for link */
+  text-decoration: underline; /* Underline for visibility */
+  transition: color 0.3s; /* Color transition */
+}
+
+.explore-more:hover {
+  color: darkblue; /* Darker blue on hover */
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for proper centering */
+  width: calc(100% - 2rem); /* Full width minus padding */
+  display: flex;
+  justify-content: space-between; /* Space between the buttons */
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s; /* Transition for opacity */
+}
+
+.product-section:hover .navigation-buttons {
+  opacity: 1; /* Show buttons on hover */
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  background-color: #007bff; /* Bootstrap-like blue */
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.button:disabled {
+  background-color: #ccc; /* Disabled state */
+}

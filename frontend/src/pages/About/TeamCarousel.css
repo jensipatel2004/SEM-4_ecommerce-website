@@ -1,0 +1,25 @@
+.team-carousel {
+    display: flex;
+    overflow-x: auto;
+    margin: 20px 0;
+  }
+  
+  .team-member {
+    text-align: center;
+    margin: 0 10px;
+  }
+  
+  .team-member img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .team-member h3 {
+    margin-top: 10px;
+  }
+  
+  .team-member p {
+    color: #777;
+  }
+  

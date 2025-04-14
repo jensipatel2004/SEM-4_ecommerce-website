@@ -1,0 +1,57 @@
+.homepage-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Adjust margin as needed */
+  }
+  
+  .service-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0; /* Remove default padding */
+  }
+  
+  .service-item {
+    width: 220px; /* Adjust width as needed */
+  }
+  
+  .service-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .card-icon {
+    background: hsl(5, 100%, 69%); /* Adjust this color as needed */
+    min-width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .card-icon img {
+    filter: brightness(0) invert(1);
+    width: 60%;
+    height: auto;
+  }
+  
+  .card-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .card-text {
+    color: hsl(0, 0%, 27%); /* Adjust this color as needed */
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+  
+  .card-text span {
+    display: inline-block;
+    color: hsl(5, 100%, 69%); /* Adjust this color as needed */
+  }
+  

@@ -1,0 +1,153 @@
+/* Profile Page Styles */
+body {
+    background: linear-gradient(120deg, #f0f4f8, #e0e7ff); /* Soft gradient background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    margin: 0;
+}
+
+/* General profile page layout */
+.profile-page {
+    display: flex;
+    margin-top: 90px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; /* Rounded edges */
+    overflow: hidden; /* Ensure no overflow from rounded corners */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 300px;
+    background-color: #ffffff; /* White background for sidebar */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.sidebar:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Sidebar button styling */
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Increased font size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.sidebar button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* Main content styling */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    animation: fadeIn 0.5s; /* Fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333; /* Darker color for heading */
+}
+
+/* View profile paragraph styling */
+.view-profile p, .edit-profile input {
+    margin-bottom: 15px;
+    font-size: 1.1em; /* Increased font size */
+}
+
+/* Input field styling */
+.edit-profile input {
+    padding: 12px;
+    width: 100%;
+    border: 1px solid #ddd; /* Border around input */
+    border-radius: 5px; /* Rounded corners for input */
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+.edit-profile input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling for Save Changes */
+.edit-profile button {
+    padding: 12px;
+    background-color: #28a745; /* Green color for Save button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.edit-profile button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scaling effect */
+}
+
+/* Styling for icons */
+button svg {
+    margin-right: 8px;  /* Space between icon and text */
+}
+
+/* View profile paragraphs with icons */
+.view-profile p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #555; /* Slightly lighter text color */
+}
+
+.view-profile p svg {
+    margin-right: 8px; /* Adds space between icon and text */
+    color: #007bff; /* Icon color */
+}
+
+/* Adjust the size of icons for consistency */
+.view-profile p svg,
+.edit-profile button svg {
+    width: 20px; /* Icon width */
+    height: 20px; /* Icon height */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .profile-page {
+        flex-direction: column; /* Stack sidebar and content on small screens */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width sidebar on mobile */
+        margin-bottom: 20px; /* Add margin below sidebar */
+    }
+
+    .content {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}

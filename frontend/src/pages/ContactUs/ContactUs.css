@@ -1,0 +1,97 @@
+/* Main container for the contact form */
+.contact-us {
+    width: 100%;
+    max-width: 600px; /* Centered form width */
+    margin: 90px auto; /* Vertical margin */
+    padding: 30px; /* Increased padding for spacious look */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    position: relative; /* For pseudo-element positioning */
+}
+
+/* Heading styles */
+.contact-us h2 {
+    text-align: center; /* Centered heading */
+    margin-bottom: 20px; /* Spacing below the heading */
+    font-family: 'Arial', sans-serif; /* Modern font */
+    font-size: 24px; /* Larger font size for heading */
+    color: #333; /* Dark color for better readability */
+}
+
+/* Form styles */
+.contact-us form {
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Column layout */
+}
+
+/* Label styles */
+.contact-us label {
+    font-size: 16px; /* Slightly smaller font for labels */
+    margin-bottom: 5px; /* Spacing below labels */
+    color: #555; /* Darker color for contrast */
+}
+
+/* Input, select, and textarea styles */
+.contact-us input,
+.contact-us select,
+.contact-us textarea {
+    padding: 12px; /* More padding for comfortable input */
+    margin-bottom: 15px; /* Spacing between fields */
+    font-size: 16px; /* Consistent font size */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded edges */
+    transition: border 0.3s ease; /* Transition for focus effect */
+}
+
+/* Styles for focused inputs */
+.contact-us input:focus,
+.contact-us select:focus,
+.contact-us textarea:focus {
+    border: 1px solid #007bff; /* Highlighted border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Textarea specific styles */
+.contact-us textarea {
+    resize: none; /* Disable resizing */
+    height: 120px; /* Increased height for better visibility */
+}
+
+/* Button styles */
+.contact-us button {
+    padding: 12px 20px; /* Comfortable padding */
+    font-size: 16px; /* Consistent font size */
+    color: white; /* White text */
+    background-color: #007bff; /* Primary button color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded edges */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Button hover effect */
+.contact-us button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Additional styling for mobile responsiveness */
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 20px; /* Adjust padding on smaller screens */
+        margin: 20px; /* Margin adjustment */
+    }
+}
+
+/* Optional: Add a decorative element */
+.contact-us::before {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    width: 100%; /* Full width */
+    height: 5px; /* Height of decorative line */
+    background: linear-gradient(90deg, #007bff, #0056b3); /* Gradient background */
+    border-radius: 10px 10px 0 0; /* Rounded corners at the top */
+}

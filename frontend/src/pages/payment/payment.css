@@ -1,0 +1,149 @@
+.App-payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #f0f0f0; /* Light gray background */
+  width: 90vw;
+  color: #333; /* Dark text color */
+  font-family: Arial, sans-serif;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.card-info, .personal-info {
+  width: 45%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #007BFF; /* Blue for headings */
+}
+
+p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #666; /* Dark gray for paragraph text */
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  height: 250px;
+  position: relative;
+}
+
+.card-logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20%;
+  height: auto;
+}
+
+.card-number {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pay-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #007BFF; /* Blue for labels */
+}
+
+.cardnumber input {
+  width: 200px;
+  padding: 10px;
+  background-color: white; 
+  color: #333;
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #007BFF; /* Blue underline */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.cardnumber ::placeholder {
+  font-style: normal;
+  font-weight: bold;
+  color: #aaa; /* Light gray for placeholders */
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-details2 input {
+  background-color: white; 
+  color: #333;
+  font-size: 1rem;
+  margin-top: 5px;
+  border-bottom: 2px solid #007BFF; /* Blue underline */
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.card-details2 ::placeholder {
+  font-weight: bold;
+  color: #aaa; /* Light gray for placeholders */
+}
+
+.inline-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inline-input input {
+  width: 100%;
+}
+
+.personal-form input {
+  background-color: #fff; /* White background for inputs */
+  border: 2px solid #007BFF; /* Blue border */
+  border-radius: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1rem;
+  text-align: center;
+  margin-right: 15px;
+  width: 100%;
+}
+
+.personal-form ::placeholder {
+  color: #aaa; /* Light gray for placeholders */
+}
+
+.pay-button {
+  background-color: #007BFF; /* Blue button */
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.pay-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

@@ -1,0 +1,157 @@
+/* General layout of the product page */
+.product-page {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Search field and filter toggle aligned with space between */
+.product-page__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 90px;
+    flex-wrap: wrap;
+    gap: 10px; /* Add spacing between search input and buttons */
+}
+
+.product-page__header input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Add margin to separate filter toggle button */
+.product-page__filter-toggle {
+    margin-left: 10px;
+}
+
+.product-page__header button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product-page__header button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Main content: split into two parts */
+.product-page__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left side: Filters and categories */
+.product-page__filters {
+    flex: 1;
+    max-width: 250px;
+    margin-left: auto; /* Align to the right */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.product-page__filters h4 {
+    margin-top: 0;
+}
+
+.product-page__filters select,
+.product-page__filters input[type="checkbox"] {
+    margin-bottom: 10px;
+}
+
+.product-page__filters label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Right side: Product list */
+.product-page__list {
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* Adjust product card width for 3 per row */
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    width: calc(30% - 20px); /* 3 products per row */
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Added transform for scaling */
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* Enhanced hover effect for product card */
+.product-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+}
+
+/* Pagination buttons */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for scaling */
+}
+
+.pagination button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.pagination button.active {
+    background-color: #333;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .product-page__content {
+        flex-direction: column;
+    }
+
+    .product-page__filters {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-card {
+        width: 100%; /* Full width on small screens */
+    }
+}

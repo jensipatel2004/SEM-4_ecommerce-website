@@ -1,0 +1,22 @@
+/* Custom styles for Navbar */
+.navbar {
+  background-color: #f8f9fa; /* Background color */
+  margin-bottom: 30px;
+}
+
+.navbar-brand img {
+  height: 50px; /* Adjust logo size */
+}
+
+.nav-link {
+  color: #000; /* Navbar link color */
+}
+
+.nav-link:hover {
+  color: #007bff; /* Hover color */
+}
+
+.btn-outline-success {
+  margin-right: 10px; /* Space between buttons */
+}
+ 
